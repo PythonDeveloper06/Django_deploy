@@ -1,7 +1,6 @@
 #!/bin/bash
 
-home_dir=$HOME
-cd $home_dir
+cd $HOME
 
 echo "<------------------------------>"
 

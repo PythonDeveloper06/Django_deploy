@@ -1,16 +1,16 @@
 server {
     listen 80;
     server_name localhost;
-    root /home/pavel/DjangoWeb;
+    root path_to_project;
 
     location = /favicon.ico { access_log off; log_not_found off; }
 
     location /static/ {
-        alias var/www/static/;
+        alias /var/www/static/;
     }
 
     location /media/ {
-        alias var/www/media/;
+        alias /var/www/media/;
     }
 
     location / {

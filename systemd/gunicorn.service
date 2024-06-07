@@ -6,8 +6,8 @@ After=network.target
 [Service]
 User=pavel
 Group=pavel
-WorkingDirectory=/home/pavel/DjangoWeb/
-ExecStart=/home/pavel/DjangoWeb/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock DjangoWeb.wsgi:application
+WorkingDirectory=path_to_project
+ExecStart=path_to_project/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock DjangoWeb.wsgi:application
 
 
 [Install]
