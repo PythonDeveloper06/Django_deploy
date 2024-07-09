@@ -12,10 +12,10 @@ echo $HOME
 cd $HOME
 ```
 
-После клонирования переходим в *django_deploy*:
+После клонирования переходим в *Django_deploy*:
 
 ```bash
-cd django_deploy/
+cd Django_deploy/
 ```
 
 Затем необходимо выдать необходимые права *main.sh*, чтобы сделать данный файл исполняемым:
