@@ -56,7 +56,7 @@ sudo cp ~/Django_deploy/nginx/DjangoWeb /etc/nginx/sites-available/
 
 sudo sed -i "s~path_to_project~$project_path~g" /etc/nginx/sites-available/DjangoWeb /etc/systemd/system/gunicorn.service
 
-sudo ln -s /etc/nginx/sites-available/DjangoWeb /etc/nginx/sites-enabled/
+sudo ln -sf /etc/nginx/sites-available/DjangoWeb /etc/nginx/sites-enabled/
 
 systemd-analyze verify /etc/systemd/system/gunicorn.service
 
