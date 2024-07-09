@@ -49,10 +49,10 @@ echo "<------------------------------>"
 
 project_path="${HOME}/${dir_path}"
 
-sudo cp ~/django_deploy/systemd/gunicorn.service /etc/systemd/system/
-sudo cp ~/django_deploy/systemd/gunicorn.socket /etc/systemd/system/
+sudo cp ~/Django_deploy/systemd/gunicorn.service /etc/systemd/system/
+sudo cp ~/Django_deploy/systemd/gunicorn.socket /etc/systemd/system/
 
-sudo cp ~/django_deploy/nginx/DjangoWeb /etc/nginx/sites-available/
+sudo cp ~/Django_deploy/nginx/DjangoWeb /etc/nginx/sites-available/
 
 sudo sed -i "s~path_to_project~$project_path~g" /etc/nginx/sites-available/DjangoWeb /etc/systemd/system/gunicorn.service
 
